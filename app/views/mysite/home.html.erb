@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>first page</title>
+		<style>
+		  .all{
+			width:50%;
+			margin:auto;
+			border:2px solid black
+			}
+		  .center{
+			text-align:center;
+			clear:left
+     			}
+		  .section{
+			float:left;
+			width:50%;
+			overflow:hidden;
+			}
+			.img{
+			  border:5px solid red;
+			  margin:1px;
+			}
+		</style>
+	</head>
+	<body class="all">
+		<div class="center"><h1>home</h1></div>
+		<div class="section"><%= link_to 'desha about', about_path  %></div>
+		<div class="section"><%= image_tag(('lake.jpg'), :class => "img")%></div>
+		<div class="center"><h1>footer</h1></div>
+	</body>
+</html>
